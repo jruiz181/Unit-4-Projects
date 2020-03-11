@@ -5,8 +5,8 @@
    Tutorial 11
    Case Problem 1
 
-   Author: 
-   Date:   
+   Author: jeremiah ruiz
+   Date:   3-11-20
    
    Filename: bw_review.js
 	
@@ -33,7 +33,20 @@
       within textStr
 
 */
+window.onload = init();
 
+function init(){
+   var stars = document.querySelectorAll("span#stars");
+   for(var i = 0; i < stars.length; i++){
+      stars[i].style.cursor = "pointer";
+      stars[i].addEventListener("mouseenter", lightStars())
+   }
+   document.getElementById("comment").addEventListener("keyup", Count());
+}
+
+function lightStars(){
+   
+}
 
 
   
